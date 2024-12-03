@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2bl0h1Mb)
 # NeXtCS Project 01
 ### Name0: Daviana Ramnauth
-### Name1: TEAMMATE NAME HERE (delete line if working solo)
+### Name1: Princeton Perhaps?
 ---
 
 ### Overview
@@ -17,15 +17,15 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: Space Invaders
 
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+Aesthetically, we need: invaders, a space ship, and safe domes. This means that we need at least five classes to have entities that move (individual invaders, invader hoard, player space ship, individual laser, and individual safe domes). Within the II class, we need to define two states (dead/alive) and then their physical shape. Within the IH class, we need to create a 2D array of IIs, and implement something similar to the method we used in ball grid to cause the grid to move. Within the PSS class, we need to create a method that moves the ship horizontally, defines two states (dead/alive), and fires lasers vertically and perpendicularly to the ship's position. Within the L class, we need to create an object that moves vertically at a given speed, and is populated relative to the starting position of a ship and "dies" only when it hits a II, SD, or PSS. Within the SD class, we need to create miniobjects within objects, so a mini-2D array, that then is filled with mini-objects that "die" if hit by a laser. The laser itself can be used by the SHH, but can also be randomly populated from a point within the IH grid. Outside of all of that, we need a way to keep a score and life count. A score is how many IIs have died, and a life count is how many times the PSS has died. 
 
 ### Extra Features
-What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
+What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. These can be customizations that are not part of the core requirements.
 
 YOUR ANSWERS HERE
 
