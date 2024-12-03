@@ -27,7 +27,7 @@ Aesthetically, we need: invaders, a space ship, and safe domes. This means that 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. These can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+We could create different levels, so at a "higher" level the IH "moves" faster, and the PSS may be able to move vertically as well. The most basic extra feature, though, would be to have a larger mothership at the top (a whole different class would need to be created).
 
 ### Array Usage
 How will you be using arrays in this project?
