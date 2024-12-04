@@ -33,34 +33,63 @@ We could create different levels, so at a "higher" level the IH "moves" faster, 
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- None I can think of so far
 
 2D Array:
-- YOUR ANSWER HERE
+- We will use them to create the invader hoard and individual safe domes
 
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- r-> restart game
+- ' ' -> shoot laser
+- left -> move PSS left
+- right -> move PSS right
+  
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: if PSS is selected, move left and right following the x-cor/speed of the mouse
+- Mouse pressed: if held, PSS is selected
 
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+invader
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - int size, PVector position, color invadeCol
 - METHODS
-  - LIST METHODS HERE
+  - void makeInvader(), void drawInvader()
 
-CLASS NAME1
+InvaderHoard
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - invader invaders[][], int numrows, int numcols 
 - METHODS
-  - LIST METHODS HERE
+  - void fillInvaders(), void moveInvaders(), void showInvaders(), boolean processDeath(), void checkEdges(), void changeMovement()
+
+Player
+- Instance variables:
+  - int size, color PlayerColor, int Xposition 
+- METHODS
+  - void makePlayer(), void drawPlayer(), void movePlayer()
+
+Laser
+- Instance variables:
+  - PVector Start, int size, color LaserColor
+- METHODS
+  - void makeLaser(), void showLaser(), void PewPew(), void ConfirmedHit() 
+
+SafeDome
+- Instance variables:
+  - DomeBlocks fullDome[][], int width, int length
+- METHODS
+  - void fillDome(), void createDome(), void showDome()
+
+DomeBlocks
+- Instance variables:
+  - PVector pos, int width, int lenghth, color DomeCol
+- METHODS
+  - void makeBlock(), void showBlock(), void ByeBlock()
+
