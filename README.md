@@ -33,7 +33,7 @@ We could create different levels, so at a "higher" level the IH "moves" faster, 
 How will you be using arrays in this project?
 
 1D Array:
-- None I can think of so far
+- Life display and score
 
 2D Array:
 - We will use them to create the invader hoard and individual safe domes
