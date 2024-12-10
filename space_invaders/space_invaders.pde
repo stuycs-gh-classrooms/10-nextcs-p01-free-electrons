@@ -1,7 +1,11 @@
 Player player;
+Laser l;
 int score, lives;
 void setup() {
   size(500, 500);
-  player = new Player(50, 50);
-  player.drawPlayer();
+  l = new Laser( 200, 250);
+}
+void draw(){
+  background(0, 0, 0);
+  l.display();
 }

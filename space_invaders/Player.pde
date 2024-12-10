@@ -9,7 +9,7 @@ Player( int x, int y) {
   this.c = #000000;
 }
 // 8 6 3 1
-void drawPlayer() {
+void display() {
   stroke(c);
   fill(c);
   rect(x, y, 8 * 5, 2.5 * 5);
